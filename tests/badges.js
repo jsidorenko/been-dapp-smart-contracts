@@ -1,0 +1,17 @@
+const clevis = require("./clevis.js");
+clevis.validateContractName();
+clevis.failToGetNonExistingBadge();
+clevis.createNftBadge();
+clevis.createLimitedFtBadge();
+clevis.createUnlimitedFtBadge();
+clevis.getCreatedBadges();
+clevis.awardNftBadge();
+clevis.awardLimitedFtBadge();
+clevis.awardUnlimitedFtBadge();
+clevis.failToAwardBadgeDueToAmount();
+clevis.checkUserBadgesBalance();
+clevis.transferNftBadge();
+clevis.transferFtBadge();
+clevis.failToTransferNonTransferableBadges();
+clevis.changeTokenUrl();
+clevis.massAwardUnlimitedFtBadge();

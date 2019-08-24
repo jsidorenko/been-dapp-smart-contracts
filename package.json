@@ -1,0 +1,37 @@
+{
+  "name": "been-badges",
+  "version": "1.0.0",
+  "description": "been-badges",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --updateSnapshot",
+    "compile:badges": "clevis test full && npm run fix-badges-artifacts",
+    "test:badges": "clevis test fast && clevis test badges",
+    "test:badges:full": "clevis test full && npm run fix-badges-artifacts && clevis test badges",
+    "test:badges:quick": "clevis test badges",
+    "setup:badges": "clevis test full && npm run fix-badges-artifacts && clevis test setup",
+    "fix-badges-artifacts": "copyfiles --flat ./contracts/badges/fixedMethods/*.js ./contracts/badges/.clevis"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "clevis": "git@github.com:jsidorenko/clevis.git#master",
+    "copyfiles": "^2.1.0",
+    "erc721x": "git@github.com:pillarwallet/erc721x.git#master",
+    "ethjs-abi": "^0.2.1",
+    "ganache-cli": "^6.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "openzeppelin-solidity": "1.12.0",
+    "truffle": "^4.1.15",
+    "truffle-hdwallet-provider": "^0.0.6",
+    "web3": "^1.0.0-beta.36",
+    "web3-utils": "^1.0.0-beta.36"
+  },
+  "devDependencies": {},
+  "jest": {
+    "testURL": "http://localhost"
+  }
+}
