@@ -10,7 +10,7 @@
     "test:badges:full": "clevis test full && npm run fix-badges-artifacts && clevis test badges",
     "test:badges:quick": "clevis test badges",
     "setup:badges": "clevis test full && npm run fix-badges-artifacts && clevis test setup",
-    "fix-badges-artifacts": "copyfiles --flat ./contracts/badges/fixedMethods/*.js ./contracts/badges/.clevis"
+    "fix-badges-artifacts": "copyfiles --flat ./contracts/Badges/fixedMethods/*.js ./contracts/Badges/.clevis"
   },
   "author": "",
   "license": "MIT",
