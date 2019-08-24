@@ -165,13 +165,6 @@ module.exports = {
         assert(result==0,"metamask ERRORS")
       });
     });
-    describe(bigHeader('PUBLISH'), function() {
-      it('should publish all contracts', async function() {
-        this.timeout(6000000)
-        const result = await clevis("test","publish")
-        assert(result==0,"publish ERRORS")
-      });
-    });
   },
 
   ////----------------------------------------------------------------------------///////////////////
