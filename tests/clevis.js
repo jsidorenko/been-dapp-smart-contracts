@@ -158,13 +158,13 @@ module.exports = {
         assert(result==0,"deploy ERRORS")
       });
     });
-    describe(bigHeader('METAMASK'), function() {
+    /*describe(bigHeader('METAMASK'), function() {
       it('should deploy all contracts', async function() {
         this.timeout(6000000)
         const result = await clevis("test","metamask")
         assert(result==0,"metamask ERRORS")
       });
-    });
+    });*/
   },
 
   ////----------------------------------------------------------------------------///////////////////
